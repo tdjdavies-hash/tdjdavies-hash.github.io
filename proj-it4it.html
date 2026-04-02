@@ -1,0 +1,205 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>IT4IT Animations — Tom Davies</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0C0B0A;--surface:#141210;--surface2:#0D1018;--text:#F2EDE4;--text-muted:rgba(242,237,228,.50);--text-subtle:rgba(242,237,228,.28);--accent:#7EA5CC;--border:rgba(242,237,228,.07);--border-mid:rgba(242,237,228,.12);--radius:6px;--radius-lg:10px;--ease:cubic-bezier(.4,0,.2,1);--t:.28s}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.container{max-width:1160px;margin:0 auto;padding:0 40px}
+@media(max-width:640px){.container{padding:0 20px}}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:20px 0;background:rgba(12,11,10,.90);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;justify-content:space-between;align-items:center}
+.nav-logo{font-family:'Montserrat',sans-serif;font-weight:700;font-size:.9rem;text-decoration:none;color:var(--text);letter-spacing:-.01em}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{font-size:.82rem;color:var(--text-muted);text-decoration:none;transition:color var(--t) var(--ease)}
+.nav-links a:hover{color:var(--text)}
+
+/* HERO */
+.proj-hero{padding:110px 0 72px;border-bottom:1px solid var(--border)}
+.back-link{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;color:var(--text-subtle);text-decoration:none;margin-bottom:36px;letter-spacing:.03em;transition:color var(--t) var(--ease)}
+.back-link:hover{color:var(--text-muted)}
+.proj-tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:18px}
+.proj-tag{font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:4px 11px;border-radius:20px;border:1px solid var(--border-mid);color:var(--text-subtle)}
+.proj-tag-accent{border-color:rgba(126,165,204,.45);color:var(--accent)}
+.proj-title{font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(2.8rem,6.5vw,6.5rem);line-height:1;letter-spacing:-.03em;color:var(--text);margin-bottom:18px}
+.proj-sub{font-size:.95rem;color:var(--text-muted);max-width:560px;line-height:1.75}
+
+/* META */
+.meta-bar{padding:32px 0;border-bottom:1px solid var(--border)}
+.meta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+@media(max-width:640px){.meta-grid{grid-template-columns:repeat(2,1fr)}}
+.meta-label{font-size:.65rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--text-subtle);margin-bottom:5px}
+.meta-value{font-size:.88rem;color:var(--text)}
+
+/* SECTIONS */
+.proj-section{padding:72px 0;border-bottom:1px solid var(--border)}
+.sec-label{font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--text-subtle);margin-bottom:16px}
+.sec-head{font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:-.02em;color:var(--text);margin-bottom:16px}
+.sec-body{font-size:.92rem;color:var(--text-muted);line-height:1.8;max-width:640px}
+
+/* VIDEO */
+.video-embed-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius-lg);border:1px solid var(--border)}
+.video-embed-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+
+/* PROCESS STEPS */
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+@media(max-width:760px){.process-grid{grid-template-columns:1fr}}
+.process-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px 28px;position:relative}
+.process-card:hover{border-color:var(--border-mid);transition:border-color var(--t) var(--ease)}
+.step-num{font-family:'Montserrat',sans-serif;font-weight:900;font-size:3rem;line-height:1;letter-spacing:-.04em;color:rgba(126,165,204,.12);margin-bottom:12px;display:block}
+.step-title{font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem;letter-spacing:-.01em;color:var(--text);margin-bottom:14px}
+.step-list{list-style:none;display:flex;flex-direction:column;gap:8px}
+.step-list li{font-size:.84rem;color:var(--text-muted);line-height:1.6;padding-left:20px;position:relative}
+.step-list li::before{content:"→";position:absolute;left:0;color:var(--accent);opacity:.7}
+
+/* VISUALS */
+.visual-full{width:100%;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);display:block}
+.visual-grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:14px}
+@media(max-width:700px){.visual-grid-3{grid-template-columns:1fr}}
+.visual-panel{border-radius:var(--radius-lg);border:1px solid var(--border);overflow:hidden;display:block;width:100%}
+
+/* NEXT / FOOTER */
+.next-section{padding:72px 0}
+.next-link{display:flex;align-items:center;justify-content:space-between;text-decoration:none;padding:40px 48px;background:var(--surface);border-radius:var(--radius-lg);border:1px solid var(--border);transition:border-color var(--t) var(--ease),transform var(--t) var(--ease),box-shadow var(--t) var(--ease)}
+.next-link:hover{border-color:var(--border-mid);transform:translateY(-3px);box-shadow:0 20px 48px rgba(0,0,0,.4)}
+.next-label{font-size:.68rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--text-subtle);margin-bottom:8px}
+.next-title{font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(1.4rem,2.5vw,2rem);letter-spacing:-.02em;color:var(--text)}
+.next-arr{font-size:1.5rem;color:var(--text-subtle);transition:transform var(--t) var(--ease)}
+.next-link:hover .next-arr{transform:translateX(5px)}
+footer{padding:28px 0;border-top:1px solid var(--border)}
+.footer-inner{display:flex;align-items:center;justify-content:space-between}
+.footer-copy,.footer-link{font-size:.76rem;color:var(--text-subtle)}
+.footer-right{display:flex;gap:20px}
+.footer-link{text-decoration:none;transition:color var(--t) var(--ease)}
+.footer-link:hover{color:var(--text-muted)}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+</style></head><body>
+
+<nav><div class="container"><div class="nav-inner">
+  <a href="TomDavies_Portfolio.html" class="nav-logo">Tom Davies</a>
+  <ul class="nav-links"><li><a href="TomDavies_Portfolio.html#work">Work</a></li><li><a href="TomDavies_Portfolio.html#about">About</a></li><li><a href="TomDavies_Portfolio.html#contact">Contact</a></li></ul>
+</div></div></nav>
+
+<!-- HERO -->
+<section class="proj-hero">
+  <div class="container">
+    <a href="TomDavies_Portfolio.html" class="back-link">← All projects</a>
+    <div class="proj-tags">
+      <span class="proj-tag proj-tag-accent">Creative Lead</span>
+      <span class="proj-tag">Motion Design</span>
+      <span class="proj-tag">The Open Group</span>
+      <span class="proj-tag">2024</span>
+    </div>
+    <h1 class="proj-title">IT4IT™<br>Animations</h1>
+    <p class="proj-sub">A series of explainer animations supporting the launch and adoption of The Open Group's IT4IT™ standard — translating complex enterprise architecture concepts into clear, engaging motion.</p>
+  </div>
+</section>
+
+<!-- META -->
+<section class="meta-bar">
+  <div class="container"><div class="meta-grid">
+    <div><p class="meta-label">Client</p><p class="meta-value">The Open Group</p></div>
+    <div><p class="meta-label">Year</p><p class="meta-value">2024</p></div>
+    <div><p class="meta-label">Role</p><p class="meta-value">Creative Lead</p></div>
+    <div><p class="meta-label">Format</p><p class="meta-value">Explainer Animation</p></div>
+  </div></div>
+</section>
+
+<!-- VIDEO EMBED -->
+<section class="proj-section reveal">
+  <div class="container">
+    <p class="sec-label">Watch</p>
+    <h2 class="sec-head">The animations in action</h2>
+    <p class="sec-body" style="margin-bottom:32px">An example from the series — introducing the IT4IT™ reference architecture to enterprise IT leaders and decision-makers around the world.</p>
+    <div class="video-embed-wrap">
+      <iframe src="https://www.youtube.com/embed/Pd8ZSC1dhPo?si=nWnHjap_iV_h9ZNk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="proj-section reveal">
+  <div class="container">
+    <p class="sec-label">Overview</p>
+    <h2 class="sec-head">Making the complex comprehensible</h2>
+    <p class="sec-body">To support the launch and adoption of The Open Group's IT4IT™ initiative, I led the creation of a series of explainer animations. The IT4IT™ standard defines a reference architecture for managing the business of IT — important, but inherently abstract. The brief was to make these concepts immediately understandable for IT leaders and decision-makers.</p>
+    <p class="sec-body" style="margin-top:16px">Acting as Creative Lead, I owned the project from the earliest stakeholder conversations through to final delivery — defining the narrative, developing the visual language, and guiding an external production agency through every stage of the work.</p>
+  </div>
+</section>
+
+<!-- PROCESS STEPS -->
+<section class="proj-section reveal">
+  <div class="container">
+    <p class="sec-label">Creative Process</p>
+    <h2 class="sec-head">From brief to finished film</h2>
+    <p class="sec-body">Three distinct phases took the project from an abstract standard to a polished animation series.</p>
+
+    <div class="process-grid">
+
+      <div class="process-card">
+        <span class="step-num">01</span>
+        <h3 class="step-title">Stakeholder Discovery</h3>
+        <ul class="step-list">
+          <li>Facilitated workshops with subject matter experts and leadership to surface objectives and key messages</li>
+          <li>Identified the core concepts that needed communicating — and the ones that didn't</li>
+          <li>Aligned stakeholders on tone, audience, and the level of technical detail appropriate for each animation</li>
+          <li>Defined success criteria and key deliverables before a single frame was drawn</li>
+        </ul>
+      </div>
+
+      <div class="process-card">
+        <span class="step-num">02</span>
+        <h3 class="step-title">Script &amp; Storyboard</h3>
+        <ul class="step-list">
+          <li>Wrote clear, accessible scripts — translating standards language into plain English without losing accuracy</li>
+          <li>Developed full storyboards, mapping the visual narrative beat by beat before production began</li>
+          <li>Iterated with stakeholders to refine pacing, messaging, and visual structure</li>
+          <li>Created a consistent motion language and style guide for the full series</li>
+        </ul>
+      </div>
+
+      <div class="process-card">
+        <span class="step-num">03</span>
+        <h3 class="step-title">Agency Production</h3>
+        <ul class="step-list">
+          <li>Briefed and onboarded an external animation studio, providing all creative direction and approved assets</li>
+          <li>Managed ongoing feedback loops — reviewing cuts, aligning on revisions, and maintaining quality across the series</li>
+          <li>Ensured all animations remained true to the IT4IT™ brand and Open Group identity guidelines</li>
+          <li>Delivered finished MP4s and web-optimised versions for use across events, website, and presentations</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- NEXT PROJECT -->
+<section class="next-section reveal">
+  <div class="container">
+    <a href="proj-b2b-video.html" class="next-link">
+      <div><p class="next-label">Next project</p><h3 class="next-title">B2B Video Production</h3></div>
+      <span class="next-arr">→</span>
+    </a>
+  </div>
+</section>
+
+<footer><div class="container"><div class="footer-inner">
+  <p class="footer-copy">© 2026 Tom Davies</p>
+  <div class="footer-right"><a href="TomDavies_Portfolio.html" class="footer-link">Portfolio</a><a href="mailto:tdjdavies@gmail.com" class="footer-link">Email</a></div>
+</div></div></footer>
+
+<script>
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');obs.unobserve(x.target)}})},{threshold:.08,rootMargin:'0px 0px -36px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body></html>
