@@ -39,49 +39,6 @@
     }
     nav a { color: var(--text); text-decoration: none; font-weight: 700; font-family: 'Montserrat', sans-serif; }
     nav a:hover { color: var(--accent); }
-    main { margin
-cat > ~/portfolio/proj-open-group-brand-refresh.html << 'ENDOFFILE'
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Open Group Brand Refresh — Tom Davies</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --bg: #0C0B0A;
-      --surface: #141210;
-      --text: #F2EDE4;
-      --text-muted: rgba(242,237,228,0.50);
-      --text-subtle: rgba(242,237,228,0.28);
-      --accent: #017D66;
-      --border: rgba(242,237,228,0.07);
-      --radius: 6px;
-      --ease: cubic-bezier(0.4, 0, 0.2, 1);
-      --t: 0.28s;
-    }
-    html { scroll-behavior: smooth; background: var(--bg); }
-    body { color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; }
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 64px;
-      background: rgba(12, 11, 10, 0.8);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      padding: 0 32px;
-      z-index: 100;
-    }
-    nav a { color: var(--text); text-decoration: none; font-weight: 700; font-family: 'Montserrat', sans-serif; }
-    nav a:hover { color: var(--accent); }
     main { margin-top: 64px; }
     .hero {
       position: relative;
@@ -91,6 +48,13 @@ cat > ~/portfolio/proj-open-group-brand-refresh.html << 'ENDOFFILE'
       justify-content: center;
       text-align: center;
       overflow: hidden;
+      background: linear-gradient(135deg, rgba(1, 125, 102, 0.1) 0%, rgba(12, 11, 10, 0.8) 100%);
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      object-fit: cover;
+      opacity: 0.3;
     }
     .hero-content { position: relative; z-index: 2; max-width: 800px; padding: 32px; }
     .hero h1 { font-size: 48px; font-weight: 900; margin-bottom: 16px; font-family: 'Montserrat', sans-serif; }
@@ -108,8 +72,13 @@ cat > ~/portfolio/proj-open-group-brand-refresh.html << 'ENDOFFILE'
     .meta-value { font-size: 14px; color: var(--text); }
     section { padding: 80px 32px; max-width: 1200px; margin: 0 auto; }
     h2 { font-size: 32px; font-weight: 800; margin-bottom: 32px; font-family: 'Montserrat', sans-serif; }
+    h3 { font-size: 18px; font-weight: 600; margin-bottom: 12px; }
     .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-top: 32px; }
     .grid-item { background: var(--surface); padding: 32px; border-radius: var(--radius); border: 1px solid var(--border); }
+    .grid-item img { width: 100%; height: auto; margin-top: 16px; border-radius: var(--radius); }
+    .mockup-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px; }
+    .mockup-item { background: var(--surface); padding: 24px; border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; }
+    .mockup-item img { width: 100%; height: auto; border-radius: var(--radius); }
     .back-link {
       display: inline-flex;
       align-items: center;
@@ -148,6 +117,7 @@ cat > ~/portfolio/proj-open-group-brand-refresh.html << 'ENDOFFILE'
 
   <main>
     <div class="hero">
+      <img src="Slide Light.png" alt="The Open Group Brand Refresh" class="hero-bg">
       <div class="hero-content">
         <h1>The Open Group<br>Brand Refresh</h1>
         <p>Comprehensive visual identity system redesign</p>
@@ -194,26 +164,32 @@ cat > ~/portfolio/proj-open-group-brand-refresh.html << 'ENDOFFILE'
         <div class="grid-item">
           <h3>Logo Lockup</h3>
           <p>Refined wordmark with improved spacing and proportions</p>
+          <img src="1-Logo.png" alt="Logo Lockup">
         </div>
         <div class="grid-item">
           <h3>Sub-brand Template</h3>
           <p>Flexible system for subsidiary brand applications</p>
+          <img src="2-subbrand.png" alt="Sub-brand Template">
         </div>
         <div class="grid-item">
           <h3>Colour System</h3>
           <p>Primary, secondary, and semantic colour palette with roles</p>
+          <img src="3-colours.png" alt="Colour System">
         </div>
         <div class="grid-item">
           <h3>Typography</h3>
           <p>Font pairing and hierarchy for digital and print</p>
+          <img src="4-typography.png" alt="Typography">
         </div>
         <div class="grid-item">
           <h3>Imagery Kit</h3>
           <p>Photography and illustration guidelines</p>
+          <img src="5-Imagery.png" alt="Imagery Kit">
         </div>
         <div class="grid-item">
           <h3>Design Tokens</h3>
           <p>Complete system of variables for development</p>
+          <img src="6-Design system tokens.png" alt="Design System Tokens">
         </div>
       </div>
     </section>
@@ -221,6 +197,17 @@ cat > ~/portfolio/proj-open-group-brand-refresh.html << 'ENDOFFILE'
     <section>
       <h2>System Applications</h2>
       <p>The brand system was applied across multiple touchpoints including corporate materials, digital platforms, and environmental design. Each application maintained consistency while adapting to specific contexts.</p>
+      <div class="mockup-grid">
+        <div class="mockup-item">
+          <img src="Asset 1.png" alt="System Application">
+        </div>
+        <div class="mockup-item">
+          <img src="Lanyard.png" alt="Lanyard Mockup">
+        </div>
+        <div class="mockup-item">
+          <img src="Pull-Up Banner Mockup.png" alt="Pull-Up Banner">
+        </div>
+      </div>
     </section>
 
     <section>
