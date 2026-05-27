@@ -1,241 +1,240 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Open Group Brand Refresh — Tom Davies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0C0B0A;
+      --surface: #141210;
+      --text: #F2EDE4;
+      --text-muted: rgba(242,237,228,0.50);
+      --text-subtle: rgba(242,237,228,0.28);
+      --accent: #017D66;
+      --border: rgba(242,237,228,0.07);
+      --radius: 6px;
+      --ease: cubic-bezier(0.4, 0, 0.2, 1);
+      --t: 0.28s;
+    }
+    html { scroll-behavior: smooth; background: var(--bg); }
+    body { color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 64px;
+      background: rgba(12, 11, 10, 0.8);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 32px;
+      z-index: 100;
+    }
+    nav a { color: var(--text); text-decoration: none; font-weight: 700; font-family: 'Montserrat', sans-serif; }
+    nav a:hover { color: var(--accent); }
+    main { margin
+cat > ~/portfolio/proj-open-group-brand-refresh.html << 'ENDOFFILE'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Open Group Brand Refresh — Tom Davies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0C0B0A;
+      --surface: #141210;
+      --text: #F2EDE4;
+      --text-muted: rgba(242,237,228,0.50);
+      --text-subtle: rgba(242,237,228,0.28);
+      --accent: #017D66;
+      --border: rgba(242,237,228,0.07);
+      --radius: 6px;
+      --ease: cubic-bezier(0.4, 0, 0.2, 1);
+      --t: 0.28s;
+    }
+    html { scroll-behavior: smooth; background: var(--bg); }
+    body { color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 64px;
+      background: rgba(12, 11, 10, 0.8);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 32px;
+      z-index: 100;
+    }
+    nav a { color: var(--text); text-decoration: none; font-weight: 700; font-family: 'Montserrat', sans-serif; }
+    nav a:hover { color: var(--accent); }
+    main { margin-top: 64px; }
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 800px; padding: 32px; }
+    .hero h1 { font-size: 48px; font-weight: 900; margin-bottom: 16px; font-family: 'Montserrat', sans-serif; }
+    .hero p { font-size: 18px; color: var(--text-muted); }
+    .meta-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      padding: 64px 32px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+    .meta-item { text-align: left; }
+    .meta-label { font-size: 12px; color: var(--text-subtle); text-transform: uppercase; margin-bottom: 8px; }
+    .meta-value { font-size: 14px; color: var(--text); }
+    section { padding: 80px 32px; max-width: 1200px; margin: 0 auto; }
+    h2 { font-size: 32px; font-weight: 800; margin-bottom: 32px; font-family: 'Montserrat', sans-serif; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-top: 32px; }
+    .grid-item { background: var(--surface); padding: 32px; border-radius: var(--radius); border: 1px solid var(--border); }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-bottom: 32px;
+      transition: color var(--t) var(--ease);
+    }
+    .back-link:hover { color: var(--accent); }
+    .tags { display: flex; gap: 12px; margin-bottom: 32px; flex-wrap: wrap; }
+    .tag {
+      display: inline-block;
+      padding: 8px 16px;
+      background: rgba(1, 125, 102, 0.12);
+      color: var(--accent);
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 32px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    img { max-width: 100%; height: auto; display: block; }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;</p>
-<p class="p1">&lt;meta charset="UTF-8"&gt;&lt;meta name="viewport" content="width=device-width,initial-scale=1.0"&gt;</p>
-<p class="p1">&lt;title&gt;The Open Group Brand Refresh — Tom Davies&lt;/title&gt;</p>
-<p class="p1">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
-<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet"&gt;</p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p1">*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}</p>
-<p class="p1">:root{--bg:#0C0B0A;--surface:#141210;--text:#F2EDE4;--text-muted:rgba(242,237,228,.50);--text-subtle:rgba(242,237,228,.28);--accent:#017D66;--border:rgba(242,237,228,.07);--border-mid:rgba(242,237,228,.12);--radius:6px;--radius-lg:10px;--ease:cubic-bezier(.4,0,.2,1);--t:.28s}</p>
-<p class="p1">html{scroll-behavior:smooth;background:var(--bg)}</p>
-<p class="p1">body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased}</p>
-<p class="p1">a{color:inherit}</p>
-<p class="p1">.container{max-width:1160px;margin:0 auto;padding:0 40px}</p>
-<p class="p1">@media(max-width:640px){.container{padding:0 20px}}</p>
-<p class="p1">nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:20px 0;background:rgba(12,11,10,.90);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}</p>
-<p class="p1">.nav-inner{display:flex;justify-content:space-between;align-items:center}</p>
-<p class="p1">.nav-logo{font-family:'Montserrat',sans-serif;font-weight:700;font-size:.9rem;text-decoration:none;color:var(--text);letter-spacing:-.01em}</p>
-<p class="p1">.nav-links{display:flex;gap:32px;list-style:none}</p>
-<p class="p1">.nav-links a{font-size:.82rem;color:var(--text-muted);text-decoration:none;transition:color var(--t) var(--ease)}</p>
-<p class="p1">.nav-links a:hover{color:var(--text)}</p>
-<p class="p1">.proj-hero{padding:110px 0 80px;border-bottom:1px solid var(--border);position:relative;overflow:hidden}</p>
-<p class="p1">.proj-hero .container{position:relative;z-index:2}</p>
-<p class="p1">.hero-image-wrap{position:absolute;right:0;top:0;height:100%;width:50%;pointer-events:none}</p>
-<p class="p1">.hero-image-wrap::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(to right, var(--bg) 0%, rgba(12,11,10,.5) 35%, transparent 65%);pointer-events:none}</p>
-<p class="p1">.hero-image{width:100%;height:100%;object-fit:cover;object-position:center;display:block;filter:brightness(.75) contrast(1.05)}</p>
-<p class="p1">@media(max-width:768px){.hero-image-wrap{width:100%;opacity:.15;top:0}}</p>
-<p class="p1">.back-link{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;color:var(--text-subtle);text-decoration:none;margin-bottom:36px;letter-spacing:.03em;transition:color var(--t) var(--ease)}</p>
-<p class="p1">.back-link:hover{color:var(--text-muted)}</p>
-<p class="p1">.proj-tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:18px}</p>
-<p class="p1">.proj-tag{font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:4px 11px;border-radius:20px;border:1px solid var(--border-mid);color:var(--text-subtle)}</p>
-<p class="p1">.proj-tag-accent{border-color:rgba(1,125,102,.45);color:var(--accent)}</p>
-<p class="p1">.proj-title{font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(2.8rem,6.5vw,6rem);line-height:1;letter-spacing:-.03em;color:var(--text);margin-bottom:18px}</p>
-<p class="p1">.proj-sub{font-size:.95rem;color:var(--text-muted);max-width:560px;line-height:1.75}</p>
-<p class="p1">.meta-bar{padding:32px 0;border-bottom:1px solid var(--border)}</p>
-<p class="p1">.meta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}</p>
-<p class="p1">@media(max-width:640px){.meta-grid{grid-template-columns:repeat(2,1fr)}}</p>
-<p class="p1">.meta-label{font-size:.65rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--text-subtle);margin-bottom:5px}</p>
-<p class="p1">.meta-value{font-size:.88rem;color:var(--text)}</p>
-<p class="p1">.proj-section{padding:72px 0;border-bottom:1px solid var(--border)}</p>
-<p class="p1">.sec-label{font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--text-subtle);margin-bottom:16px}</p>
-<p class="p1">.sec-head{font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:-.02em;color:var(--text);margin-bottom:16px}</p>
-<p class="p1">.sec-body{font-size:.92rem;color:var(--text-muted);line-height:1.8;max-width:680px}</p>
-<p class="p1">.overview-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}</p>
-<p class="p1">@media(max-width:768px){.overview-grid{grid-template-columns:1fr;gap:32px}}</p>
-<p class="p1">.overview-lead{font-size:1.05rem;color:var(--text);line-height:1.8;font-weight:400;margin-bottom:20px}</p>
-<p class="p1">.overview-body{font-size:.9rem;color:var(--text-muted);line-height:1.85;margin-bottom:16px}</p>
-<p class="p1">.calib-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-top:36px}</p>
-<p class="p1">@media(max-width:768px){.calib-grid{grid-template-columns:1fr}}</p>
-<p class="p1">.calib-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;overflow:hidden;transition:border-color var(--t) var(--ease)}</p>
-<p class="p1">.calib-card:hover{border-color:var(--border-mid)}</p>
-<p class="p1">.calib-num{font-family:'Montserrat',sans-serif;font-weight:900;font-size:2.8rem;color:rgba(1,125,102,.08);line-height:1;margin-bottom:12px;letter-spacing:-.04em}</p>
-<p class="p1">.calib-title{font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.15rem;letter-spacing:-.01em;color:var(--text);margin-bottom:10px}</p>
-<p class="p1">.calib-desc{font-size:.84rem;color:var(--text-muted);line-height:1.7}</p>
-<p class="p1">.visual-full{width:100%;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);display:block;margin-top:28px}</p>
-<p class="p1">.visual-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}</p>
-<p class="p1">@media(max-width:700px){.visual-grid-2{grid-template-columns:1fr}}</p>
-<p class="p1">.visual-panel{border-radius:var(--radius-lg);border:1px solid var(--border);overflow:hidden;display:block;width:100%}</p>
-<p class="p1">.app-section{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:32px}</p>
-<p class="p1">@media(max-width:768px){.app-section{grid-template-columns:1fr}}</p>
-<p class="p1">.app-text h3{font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.2rem;letter-spacing:-.02em;color:var(--text);margin-bottom:12px}</p>
-<p class="p1">.app-text p{font-size:.88rem;color:var(--text-muted);line-height:1.8;margin-bottom:12px}</p>
-<p class="p1">.next-section{padding:72px 0}</p>
-<p class="p1">.next-link{display:flex;align-items:center;justify-content:space-between;text-decoration:none;padding:40px 48px;background:var(--surface);border-radius:var(--radius-lg);border:1px solid var(--border);transition:border-color var(--t) var(--ease),transform var(--t) var(--ease),box-shadow var(--t) var(--ease)}</p>
-<p class="p1">.next-link:hover{border-color:var(--border-mid);transform:translateY(-3px);box-shadow:0 20px 48px rgba(0,0,0,.4)}</p>
-<p class="p1">.next-label{font-size:.68rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--text-subtle);margin-bottom:8px}</p>
-<p class="p1">.next-title{font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(1.4rem,2.5vw,2rem);letter-spacing:-.02em;color:var(--text)}</p>
-<p class="p1">.next-arr{font-size:1.5rem;color:var(--text-subtle);transition:transform var(--t) var(--ease)}}</p>
-<p class="p1">.next-link:hover .next-arr{transform:translateX(5px)}</p>
-<p class="p1">footer{padding:28px 0;border-top:1px solid var(--border)}</p>
-<p class="p1">.footer-inner{display:flex;align-items:center;justify-content:space-between}</p>
-<p class="p1">.footer-copy,.footer-link{font-size:.76rem;color:var(--text-subtle)}</p>
-<p class="p1">.footer-right{display:flex;gap:20px}</p>
-<p class="p1">.footer-link{text-decoration:none;transition:color var(--t) var(--ease)}}</p>
-<p class="p1">.footer-link:hover{color:var(--text-muted)}</p>
-<p class="p1">.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}}</p>
-<p class="p1">.reveal.visible{opacity:1;transform:translateY(0)}}</p>
-<p class="p1">&lt;/style&gt;&lt;/head&gt;&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;nav&gt;&lt;div class="container"&gt;&lt;div class="nav-inner"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;a href="index.html" class="nav-logo"&gt;Tom Davies&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;ul class="nav-links"&gt;&lt;li&gt;&lt;a href="index.html#work"&gt;Work&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="index.html#about"&gt;About&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="index.html#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</p>
-<p class="p1">&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="proj-hero"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="hero-image-wrap"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;img class="hero-image" src="Slide Light.png" alt="Open Group brand system"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="index.html" class="back-link"&gt;← All projects&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="proj-tags"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="proj-tag proj-tag-accent"&gt;Brand Strategy&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="proj-tag"&gt;Design System&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="proj-tag"&gt;Visual Identity&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="proj-tag"&gt;2024–2025&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1 class="proj-title"&gt;The Open Group&lt;br&gt;Brand Refresh&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="proj-sub"&gt;A strategic identity update that brought clarity and consistency to a 30-year-old standards consortium — preserving equity while modernising execution.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="meta-bar"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;&lt;div class="meta-grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;&lt;p class="meta-label"&gt;Client&lt;/p&gt;&lt;p class="meta-value"&gt;The Open Group&lt;/p&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;&lt;p class="meta-label"&gt;Role&lt;/p&gt;&lt;p class="meta-value"&gt;Brand Lead&lt;/p&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;&lt;p class="meta-label"&gt;Scope&lt;/p&gt;&lt;p class="meta-value"&gt;Visual Identity, Design System&lt;/p&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;&lt;p class="meta-label"&gt;Year&lt;/p&gt;&lt;p class="meta-value"&gt;2024 – 2025&lt;/p&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="proj-section reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sec-label"&gt;Overview&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="overview-grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="overview-lead"&gt;A brand update, not a redesign.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="overview-body"&gt;The Open Group is a 30-year-old standards consortium trusted by 900+ member organisations and 100,000+ certified enterprise architects worldwide. That institutional credibility is the brand's greatest asset — but the visual identity had accumulated inconsistencies that quietly undermined it.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="overview-body"&gt;The logo lockup drifted off its own grid. Sub-brands multiplied without a template. The colour palette had eight swatches and no defined roles. Typography defaulted to a single voice. Stock photography stood in for genuine visual thinking. And the print brand manual had no connection to the CSS already running on the live website.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="overview-body"&gt;The task was precise: bring the visual identity into the modern era without losing what makes it recognisable. The O symbol, the name, and the brand equity in TOGAF, ArchiMate, FACE, OSDU, and UNIX were non-negotiable anchors. Six targeted calibrations — not a redesign, but strategic refinements — delivered a scalable system any team could maintain and extend.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="Asset 1.png" alt="Brand system overview" style="width:100%;border-radius:10px;border:1px solid rgba(242,237,228,.07);margin-top:20px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="proj-section reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sec-label"&gt;Six Calibrations&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="sec-head"&gt;Strategic refinements, not redesign&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sec-body"&gt;Each calibration fixed a specific weakness without replacing the asset that carried it.&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="calib-grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="calib-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="calib-num"&gt;01&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="calib-title"&gt;Logo Lockup&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="calib-desc"&gt;The composition, proportions and colours were preserved. The fix was purely typographic: aligning THE / GROUP to an eight-unit baseline grid, dropping the O onto the same baseline, and eliminating the floating void that made the mark feel unresolved.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="calib-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="calib-num"&gt;02&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="calib-title"&gt;Sub-brand Template&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="calib-desc"&gt;Rather than commissioning bespoke marks for every forum and workgroup, a single endorsement template was designed — one O symbol, one name, one strap — colour-coded by entity type. Any new sub-brand can be generated in minutes.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="calib-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="calib-num"&gt;03&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="calib-title"&gt;Colour with Roles&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="calib-desc"&gt;The existing eight swatches were assigned functional roles: Primary (Logo Blue) for authority and navigation, Accent (Logo Green) for calls to action, with Neutral, Secondary, Surface, and semantic tokens for Success, Warning, and Error states.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="calib-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="calib-num"&gt;04&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="calib-title"&gt;Type Pairing&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="calib-desc"&gt;The Open Group already owned Times New Roman (wordmark) and Arial (body copy). Extending Times into display headlines created a tonal range — authoritative for standards titles, editorial for pull quotes — without a single new font license.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="calib-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="calib-num"&gt;05&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="calib-title"&gt;Diagram Kit&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="calib-desc"&gt;An audience of enterprise architects reads diagrams for a living. A kit of five brand-true components — Band, Block, Arrow, Dot, Label — means any author can produce on-brand visual IP in under a minute, replacing generic stock photography.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="calib-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="calib-num"&gt;06&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="calib-title"&gt;Design System Tokens&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="calib-desc"&gt;The brand manual ran from print rules. The live website already used a CSS token file. Merging the two added typography, spacing, and component patterns — making the design system the single source of truth: importable, versioned, and directly usable by developers.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;img src="3-colours.png" alt="Colour palette with roles" class="visual-full"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="proj-section reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sec-label"&gt;System &amp;amp; Application&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="sec-head"&gt;Applied across every surface&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="app-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="app-text"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;A scalable, maintainable system&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;The system was applied across every surface in scope: redesigned homepage prototype, LinkedIn templates (company page, post, carousel, profile banner), conference signage and name badges for Houston 2026, business cards, letterhead, and HTML email signature.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Six small changes produced a coherent, scalable system — one that any designer or developer in the organisation can use without referring back to a creative team for every decision.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="6-Design system tokens.png" alt="Design system tokens" style="width:100%;border-radius:10px;border:1px solid rgba(242,237,228,.07)"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="visual-grid-2" style="margin-top:48px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="Pull-Up Banner Mockup.png" alt="Conference pull-up banner" class="visual-panel" style="object-fit:cover;height:380px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="Lanyard.png" alt="Conference lanyard" class="visual-panel" style="object-fit:cover;height:380px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="proj-section reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sec-label"&gt;Result&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="sec-head"&gt;A brand that scales&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sec-body"&gt;The homepage redesign demonstrated the type pairing, token system, and dual-level navigation working together as a live prototype. The conference collateral showed the same lockup, palette, and type pair carrying across formats from a 2-metre pull-up banner to an 85mm business card. The sub-brand template removed the need for bespoke design work on every new forum or consortium.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sec-body" style="margin-top:16px"&gt;By closing the gap between the print brand manual and the live CSS, the refresh created something the previous identity lacked: &lt;em style="color:var(--text)"&gt;a brand that can be maintained at scale, by a team, over time — without drifting.&lt;/em&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="next-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="proj-pilpouch.html" class="next-link"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="next-label"&gt;Next Project&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="next-title"&gt;PilPouch&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="next-arr"&gt;→&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;footer&gt;&lt;div class="container"&gt;&lt;div class="footer-inner"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="footer-copy"&gt;© 2026 Tom Davies&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="footer-right"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="mailto:tdjdavies@gmail.com" class="footer-link"&gt;tdjdavies@gmail.com&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="https://linkedin.com/in/tomdaviesdesign" class="footer-link"&gt;LinkedIn&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/div&gt;&lt;/div&gt;&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p1">const io = new IntersectionObserver((entries)=&gt;{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>entries.forEach(e=&gt;{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}});<span class="Apple-converted-space"> </span></p>
-<p class="p1">},{{threshold:.12}});</p>
-<p class="p1">document.querySelectorAll('.reveal').forEach(el=&gt;io.observe(el));</p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;&lt;/html&gt;</p>
+  <nav>
+    <a href="index.html">Tom Davies</a>
+  </nav>
+
+  <main>
+    <div class="hero">
+      <div class="hero-content">
+        <h1>The Open Group<br>Brand Refresh</h1>
+        <p>Comprehensive visual identity system redesign</p>
+      </div>
+    </div>
+
+    <section>
+      <a href="index.html" class="back-link">← Back to portfolio</a>
+
+      <div class="tags">
+        <span class="tag">Brand Identity</span>
+        <span class="tag">Design System</span>
+        <span class="tag">Corporate</span>
+      </div>
+
+      <div class="meta-bar">
+        <div class="meta-item">
+          <div class="meta-label">Client</div>
+          <div class="meta-value">The Open Group</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Role</div>
+          <div class="meta-value">Lead Designer</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Scope</div>
+          <div class="meta-value">Full Brand System</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Year</div>
+          <div class="meta-value">2024</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Overview</h2>
+      <p>The Open Group required a comprehensive brand refresh to modernize their visual identity while maintaining recognition within the enterprise architecture community. The project encompassed logo redesign, colour system development, typography refinement, and a complete design system.</p>
+    </section>
+
+    <section>
+      <h2>Brand Calibrations</h2>
+      <div class="grid">
+        <div class="grid-item">
+          <h3>Logo Lockup</h3>
+          <p>Refined wordmark with improved spacing and proportions</p>
+        </div>
+        <div class="grid-item">
+          <h3>Sub-brand Template</h3>
+          <p>Flexible system for subsidiary brand applications</p>
+        </div>
+        <div class="grid-item">
+          <h3>Colour System</h3>
+          <p>Primary, secondary, and semantic colour palette with roles</p>
+        </div>
+        <div class="grid-item">
+          <h3>Typography</h3>
+          <p>Font pairing and hierarchy for digital and print</p>
+        </div>
+        <div class="grid-item">
+          <h3>Imagery Kit</h3>
+          <p>Photography and illustration guidelines</p>
+        </div>
+        <div class="grid-item">
+          <h3>Design Tokens</h3>
+          <p>Complete system of variables for development</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>System Applications</h2>
+      <p>The brand system was applied across multiple touchpoints including corporate materials, digital platforms, and environmental design. Each application maintained consistency while adapting to specific contexts.</p>
+    </section>
+
+    <section>
+      <h2>Result</h2>
+      <p>A comprehensive, modern brand identity that strengthens The Open Group's presence in the enterprise architecture space while providing flexibility for future growth and applications.</p>
+    </section>
+
+    <section style="padding-top: 40px; padding-bottom: 80px; border-top: 1px solid var(--border);">
+      <a href="index.html" class="back-link">← Back to portfolio</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Tom Davies. All rights reserved.</p>
+  </footer>
 </body>
 </html>
