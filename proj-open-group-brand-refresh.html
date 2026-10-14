@@ -1,227 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Open Group Brand Refresh — Tom Davies</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --bg: #0C0B0A;
-      --surface: #141210;
-      --text: #F2EDE4;
-      --text-muted: rgba(242,237,228,0.50);
-      --text-subtle: rgba(242,237,228,0.28);
-      --accent: #017D66;
-      --border: rgba(242,237,228,0.07);
-      --radius: 6px;
-      --ease: cubic-bezier(0.4, 0, 0.2, 1);
-      --t: 0.28s;
-    }
-    html { scroll-behavior: smooth; background: var(--bg); }
-    body { color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; }
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 64px;
-      background: rgba(12, 11, 10, 0.8);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      padding: 0 32px;
-      z-index: 100;
-    }
-    nav a { color: var(--text); text-decoration: none; font-weight: 700; font-family: 'Montserrat', sans-serif; }
-    nav a:hover { color: var(--accent); }
-    main { margin-top: 64px; }
-    .hero {
-      position: relative;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      overflow: hidden;
-      background: linear-gradient(135deg, rgba(1, 125, 102, 0.1) 0%, rgba(12, 11, 10, 0.8) 100%);
-    }
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      object-fit: cover;
-      opacity: 0.3;
-    }
-    .hero-content { position: relative; z-index: 2; max-width: 800px; padding: 32px; }
-    .hero h1 { font-size: 48px; font-weight: 900; margin-bottom: 16px; font-family: 'Montserrat', sans-serif; }
-    .hero p { font-size: 18px; color: var(--text-muted); }
-    .meta-bar {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 32px;
-      padding: 64px 32px;
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-    }
-    .meta-item { text-align: left; }
-    .meta-label { font-size: 12px; color: var(--text-subtle); text-transform: uppercase; margin-bottom: 8px; }
-    .meta-value { font-size: 14px; color: var(--text); }
-    section { padding: 80px 32px; max-width: 1200px; margin: 0 auto; }
-    h2 { font-size: 32px; font-weight: 800; margin-bottom: 32px; font-family: 'Montserrat', sans-serif; }
-    h3 { font-size: 18px; font-weight: 600; margin-bottom: 12px; }
-    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-top: 32px; }
-    .grid-item { background: var(--surface); padding: 32px; border-radius: var(--radius); border: 1px solid var(--border); }
-    .grid-item img { width: 100%; height: auto; margin-top: 16px; border-radius: var(--radius); }
-    .mockup-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px; }
-    .mockup-item { background: var(--surface); padding: 24px; border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; }
-    .mockup-item img { width: 100%; height: auto; border-radius: var(--radius); }
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--text-muted);
-      text-decoration: none;
-      margin-bottom: 32px;
-      transition: color var(--t) var(--ease);
-    }
-    .back-link:hover { color: var(--accent); }
-    .tags { display: flex; gap: 12px; margin-bottom: 32px; flex-wrap: wrap; }
-    .tag {
-      display: inline-block;
-      padding: 8px 16px;
-      background: rgba(1, 125, 102, 0.12);
-      color: var(--accent);
-      border-radius: 4px;
-      font-size: 12px;
-      font-weight: 500;
-    }
-    footer {
-      background: var(--surface);
-      border-top: 1px solid var(--border);
-      padding: 32px;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 14px;
-    }
-    img { max-width: 100%; height: auto; display: block; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Open Group Brand Refresh, Tom Davies</title>
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Tom Davies">
+<meta property="og:title" content="The Open Group Brand Refresh, Tom Davies">
+<meta property="og:description" content="A self-initiated proposal to refresh The Open Group&#x27;s visual identity: logo, sub-brands, colour, type, imagery and design tokens.">
+<meta property="og:url" content="https://tdjdavies-hash.github.io/proj-open-group-brand-refresh.html">
+<meta property="og:image" content="https://tdjdavies-hash.github.io/images/covers/open-group-brand-refresh.jpg">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="600">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14101f">
+<meta name="description" content="A self-initiated proposal to refresh The Open Group&#x27;s visual identity: logo, sub-brands, colour, type, imagery and design tokens.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+a{color:inherit}
+.container{max-width:1120px;margin:0 auto}
+.meta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+@media (max-width:640px){ .meta-grid{grid-template-columns:repeat(2,1fr)} }
+.proj-tags{display:flex;flex-wrap:wrap}
+.back-link{display:inline-flex;gap:6px}
+.next-link{display:flex;align-items:center;justify-content:space-between;text-decoration:none;transition:transform .28s,box-shadow .28s,border-color .28s}
+.next-arr{font-size:1.5rem}
+
+
+/* applications */
+.apps{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:40px;align-items:start}
+.apps .wide{grid-column:1/-1}
+.app{margin:0}
+.app .frame{border:2px solid var(--line);box-shadow:var(--shadow);background:#e9ebec;display:grid;place-items:center;overflow:hidden}
+.app .frame img{display:block;width:100%;height:auto}
+.app .frame.fit{aspect-ratio:4/5;position:relative}
+.app .frame.fit img{position:absolute;inset:32px;width:calc(100% - 64px);height:calc(100% - 64px);object-fit:contain}
+.app .frame.logo{background:#f4f6f6}
+.app .frame.fit.logo img{inset:0;margin:auto;width:62%;height:auto}
+.app figcaption{font-family:var(--pixel);font-size:11px;color:var(--muted);margin-top:12px}
+@media (max-width:640px){ .apps{grid-template-columns:1fr} }
+
+/* Now / Proposed plates, rebuilt in code in The Open Group's own palette */
+.plate{display:grid;grid-template-columns:1fr 1fr;margin-top:28px;border:2px solid var(--line);box-shadow:var(--shadow);background:#fff;color:#1d1d1b;font-family:Arial,Helvetica,sans-serif}
+.plate > div{padding:26px 24px;min-width:0}
+.plate > .now{background:#f2f2f2;border-right:2px solid #d9d9d9}
+.plate .lbl{display:block;font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;margin-bottom:18px;color:#b3412f}
+.plate .proposed .lbl{color:#007D66}
+.plate img{display:block;width:100%;height:auto}
+@media (max-width:760px){ .plate{grid-template-columns:1fr} .plate > .now{border-right:0;border-bottom:2px solid #d9d9d9} }
+.fix{margin-top:72px}
+.fix:first-of-type{margin-top:40px}
+.fix h3{font-family:var(--pixel);font-weight:400;font-size:16px;color:var(--ink);margin:0 0 10px}
+.fix .prose p{margin:0}
+/* sub-brand template */
+.sb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.sb{border:1px solid #e3e3e3;padding:12px 12px 10px;min-width:0}
+.sb .top{display:flex;align-items:center;gap:8px;min-height:40px}
+.sb .o{font-family:"Times New Roman",Times,serif;font-style:italic;font-size:38px;line-height:1;color:#007D66}
+.sb .nm{font-family:"Times New Roman",Times,serif;font-weight:700;font-size:15px;line-height:1.1;color:#006680}
+.sb .rule{width:28px;height:3px;background:#007D66;margin:8px 0 6px}
+.sb .strap{font-size:9px;letter-spacing:.3em;text-transform:uppercase;font-weight:700;color:#333}
+.sb .of{font-size:9px;font-style:italic;color:#555;margin-top:6px}
+@media (max-width:420px){ .sb-grid{grid-template-columns:1fr 1fr} }
+/* colour */
+.sw8{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.sw8 div{aspect-ratio:4/3;display:flex;align-items:flex-end;padding:8px;font-size:11px}
+.sw8 div span{background:rgba(255,255,255,.85);padding:2px 5px;color:#333}
+.roles{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.roles div{padding:10px;color:#fff;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;min-height:64px;display:flex;flex-direction:column;justify-content:space-between}
+.roles div code{font-family:"Courier New",monospace;letter-spacing:0;font-weight:400;font-size:11px;text-transform:none}
+.roles .big{grid-column:span 3;min-height:110px}
+.roles .big strong{font-family:"Times New Roman",Times,serif;font-size:24px;letter-spacing:0;text-transform:none}
+.roles .mid{grid-column:span 2}
+.roles .light{color:#333}
+/* type */
+.spec-h{font-size:clamp(28px,4vw,40px);line-height:1.1;margin:0 0 16px}
+.spec-b{font-size:15px;line-height:1.6;margin:0 0 16px;color:#333}
+.spec-q{font-family:"Times New Roman",Times,serif;font-style:italic;font-size:22px;color:#006680;margin:0}
+.spec-k{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#888;margin:0 0 6px;font-weight:700}
+/* diagram kit */
+.kit{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-bottom:18px;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#666}
+.kit figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:6px}
+.kit .band{width:56px;height:16px;background:#006680}
+.kit .block{width:44px;height:26px;border:2px solid #006680;background:#fff}
+.kit .arrow{width:44px;height:2px;background:#555;position:relative;margin:12px 0}
+.kit .arrow::after{content:"";position:absolute;right:-1px;top:-4px;border-left:8px solid #555;border-top:5px solid transparent;border-bottom:5px solid transparent}
+.kit .dot{width:20px;height:20px;border-radius:50%;background:#007D66}
+.kit .label{font-family:"Times New Roman",Times,serif;font-style:italic;font-size:16px;letter-spacing:0;text-transform:none;color:#006680}
+.layers{display:grid;gap:6px}
+.layer{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;align-items:center;padding:8px;color:#fff;font-size:13px;font-weight:700}
+.layer span.b{background:#fff;color:#006680;text-align:center;padding:6px 4px;font-weight:700;font-size:12px}
+.layer.l1{background:#006680}.layer.l2{background:#007D66}.layer.l2 span.b{color:#007D66}.layer.l3{background:#575756}.layer.l3 span.b{color:#575756}
+.reveal .layer span.b{opacity:0;transform:translateY(6px);transition:opacity .4s ease,transform .4s ease}
+.reveal.visible .layer span.b{opacity:1;transform:none}
+.reveal.visible .layer:nth-child(1) span.b{transition-delay:.2s}.reveal.visible .layer:nth-child(2) span.b{transition-delay:.5s}.reveal.visible .layer:nth-child(3) span.b{transition-delay:.8s}
+@media (prefers-reduced-motion:reduce){ .reveal .layer span.b{opacity:1;transform:none;transition:none} }
+/* tokens */
+.manual{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.manual li{background:#fff;border:1px solid #ddd;padding:7px 10px;font-size:13px}
+.tok{font-family:"Courier New",monospace;font-size:13px;line-height:1.7;background:#0f2a33;color:#e6f1f3;padding:16px;margin:0;overflow-x:auto;white-space:pre}
+.tok .c{color:#7fb2a6}.tok .a{color:#ffd79a}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+</style>
+<link rel="stylesheet" href="assets/project.css">
+<style>:root{--acc:#7fb2e5}</style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Tom Davies</a>
-  </nav>
 
-  <main>
-    <div class="hero">
-      <img src="Slide Light.png" alt="The Open Group Brand Refresh" class="hero-bg">
-      <div class="hero-content">
-        <h1>The Open Group<br>Brand Refresh</h1>
-        <p>Comprehensive visual identity system redesign</p>
-      </div>
+<header class="site-nav"><div class="container">
+  <a class="brand" href="index.html">Tom Davies</a>
+  <ul>
+    <li><a href="index.html#work">Work</a></li>
+    <li class="hide-s"><a href="index.html#about">About</a></li>
+    <li class="hide-s"><a href="index.html#contact">Contact</a></li>
+    <li><a class="btn" href="island.html">Play my CV</a></li>
+  </ul>
+</div></header>
+
+<main>
+<section class="proj-hero">
+  <canvas class="proj-sky" aria-hidden="true"></canvas>
+  <div class="container">
+    <a href="index.html" class="back-link">← All projects</a>
+    <div class="proj-tags"><span class="proj-tag proj-tag-accent">Brand identity</span><span class="proj-tag">Proposal</span><span class="proj-tag">Self-initiated</span><span class="proj-tag">2026</span></div>
+    <h1 class="proj-title">The Open Group<br>Brand Refresh</h1>
+    <p class="proj-sub">A proposal to refresh The Open Group's visual identity. I kept the parts people already recognise, tightened everything around them, and mocked it up on our Houston 2026 summit to show how it would work.</p>
+  </div>
+</section>
+<section class="meta-bar">
+  <div class="container"><div class="meta-grid"><div><p class="meta-label">Client</p><p class="meta-value">The Open Group</p></div><div><p class="meta-label">Year</p><p class="meta-value">2026</p></div><div><p class="meta-label">My role</p><p class="meta-value">Lead designer, self-initiated</p></div><div><p class="meta-label">Scope</p><p class="meta-value">Logo, sub-brands, colour, type, imagery, tokens</p></div></div></div>
+</section>
+
+<section class="proj-section reveal ">
+  <div class="container">
+    <p class="sec-label">Where it started</p>
+    <h2 class="sec-head">Keep the logo, fix the rest</h2>
+    <div class="prose"><p>This started with a few conversations with members of our exec team who felt the brand was looking tired. I offered to take it on.</p><p>The Open Group has been around since 1996 and its logo is well known in enterprise architecture. Starting again would have thrown that away, and the logo wasn't really the problem anyway. Everything around it was. Eight brand colours with no rules for which one leads. Arial Bold for every headline. A different logo style for every standard and forum. Stock photos of glass towers. A brand manual that stopped at business cards and lanyard sizes.</p><p>So I went through the brand one piece at a time and set out what's there now next to what I'd change.</p></div>
+
+  </div>
+</section>
+
+<section class="proj-section reveal ">
+  <div class="container">
+    <p class="sec-label">The proposal</p>
+    <h2 class="sec-head">Six fixes</h2>
+    <div class="fix"><h3>The logo</h3><div class="prose"><p>I'd keep the logo and fix its spacing. THE and GROUP move onto the same baseline grid as Open, and the registered mark stops floating off the edge.</p></div><div class="plate"><div class="now"><span class="lbl">Now</span><img src="images/brand-refresh/logo-now.jpg" alt="The current logo on a baseline grid, with uneven spacing" loading="lazy"></div><div class="proposed"><span class="lbl">Proposed</span><img src="images/brand-refresh/logo-proposed.jpg" alt="The tightened logo, with all three rows on one baseline grid" loading="lazy"></div></div></div>
+    <div class="fix"><h3>Sub-brands</h3><div class="prose"><p>TOGAF, ArchiMate, UNIX, IT4IT and the rest each have their own font and colour. I'd replace them with one template: the name set in Times, a short Arial strap underneath and a small O mark. A new forum could drop straight in without a redesign.</p></div><div class="plate"><div class="now"><span class="lbl">Now</span><img src="images/brand-refresh/subbrands-now.jpg" alt="Six current sub-brand logos, each in a different style" loading="lazy"></div><div class="proposed"><span class="lbl">Proposed</span><div class="sb-grid"><div class="sb"><div class="top"><span class="o">O</span><span class="nm">TOGAF</span></div><div class="rule"></div><div class="strap">Standard</div><div class="of">of The Open Group®</div></div><div class="sb"><div class="top"><span class="o">O</span><span class="nm">ArchiMate</span></div><div class="rule"></div><div class="strap">Standard</div><div class="of">of The Open Group®</div></div><div class="sb"><div class="top"><span class="o">O</span><span class="nm">Open Agile Architecture</span></div><div class="rule"></div><div class="strap">Standard</div><div class="of">of The Open Group®</div></div><div class="sb"><div class="top"><span class="o">O</span><span class="nm">FACE</span></div><div class="rule"></div><div class="strap">Consortium</div><div class="of">of The Open Group®</div></div><div class="sb"><div class="top"><span class="o">O</span><span class="nm">OSDU</span></div><div class="rule"></div><div class="strap">Forum</div><div class="of">of The Open Group®</div></div><div class="sb"><div class="top"><span class="o">O</span><span class="nm">IT4IT</span></div><div class="rule"></div><div class="strap">Standard</div><div class="of">of The Open Group®</div></div></div></div></div></div>
+    <div class="fix"><h3>Colour</h3><div class="prose"><p>Logo Blue leads and Logo Green accents, roughly 60, 30 and 10 with the neutrals. Orange and purple move to warning and info roles, which matches the colour tokens already in our CSS.</p></div><div class="plate"><div class="now"><span class="lbl">Now</span><div class="sw8"><div style="background:#c8c8c8"><span>Light grey</span></div><div style="background:#89a2ae"><span>Mid grey</span></div><div style="background:#8ec0e3"><span>Light blue</span></div><div style="background:#2a647d"><span>Logo blue</span></div><div style="background:#d99347"><span>Orange</span></div><div style="background:#367b67"><span>Logo green</span></div><div style="background:#80b54f"><span>Accent green</span></div><div style="background:#644696"><span>Purple</span></div></div></div><div class="proposed"><span class="lbl">Proposed</span><div class="roles">
+<div class="big" style="background:#006680">Primary<strong>Logo Blue</strong><code>#006680</code></div>
+<div class="big" style="background:#007D66">Accent<strong>Logo Green</strong><code>#007D66</code></div>
+<div class="mid" style="background:#575756">Neutral<code>#575756</code></div>
+<div class="mid" style="background:#82A3B0">Secondary<code>#82A3B0</code></div>
+<div class="mid light" style="background:#F2F2F2;border:1px solid #ddd">Surface<code>#F2F2F2</code></div>
+<div class="mid light" style="background:#73C3ED">Info<code>#73C3ED</code></div>
+<div class="mid" style="background:#009959">Success<code>#009959</code></div>
+<div class="mid" style="background:#E58F33">Warning<code>#E58F33</code></div>
+</div></div></div></div>
+    <div class="fix"><h3>Type</h3><div class="prose"><p>Times New Roman for headlines and standard titles, Arial for everything else. Both are already on every machine. No new licences.</p></div><div class="plate"><div class="now"><span class="lbl">Now</span><p class="spec-k">Headline · Arial Bold</p><p class="spec-h" style="font-family:Arial,sans-serif;font-weight:700;color:#333">Open standards.</p><p class="spec-k">Body · Arial</p><p class="spec-b">The Open Group leads the development of open, vendor-neutral technology standards and certification.</p></div><div class="proposed"><span class="lbl">Proposed</span><p class="spec-k">Headline · Times New Roman</p><p class="spec-h" style="font-family:'Times New Roman',Times,serif;font-weight:700;color:#006680">Open standards.</p><p class="spec-k">Body · Arial</p><p class="spec-b">The Open Group leads the development of open, vendor-neutral technology standards and certification.</p><p class="spec-k">Quotes · Times New Roman Italic</p><p class="spec-q">“Boundaryless Information Flow”</p></div></div></div>
+    <div class="fix reveal"><h3>Imagery</h3><div class="prose"><p>Instead of stock photos, a simple diagram kit with five parts: bands, blocks, arrows, dots and labels. Anyone could build a clear architecture diagram from it in about 30 seconds.</p></div><div class="plate"><div class="now"><span class="lbl">Now</span><img src="images/brand-refresh/imagery-now.jpg" alt="Four stock photos currently used: glass towers, a fibre-optic blur, a city bridge and a meeting" loading="lazy"></div><div class="proposed"><span class="lbl">Proposed</span><div class="kit"><figure><div class="band"></div>Band</figure><figure><div class="block"></div>Block</figure><figure><div class="arrow"></div>Arrow</figure><figure><div class="dot"></div>Dot</figure><figure><div class="label">Phase A</div>Label</figure></div>
+<div class="layers" aria-label="Example: a customer onboarding architecture in three layers">
+<div class="layer l1">Business<span class="b">Sign-up</span><span class="b">Verification</span></div>
+<div class="layer l2">Application<span class="b">Web portal</span><span class="b">ID service</span></div>
+<div class="layer l3">Technology<span class="b">AWS</span><span class="b">Postgres</span></div>
+</div></div></div></div>
+    <div class="fix"><h3>Design tokens</h3><div class="prose"><p>Half the work is done. There's already a brand-colors.css file, so I mapped out what it needs next: fonts, a spacing scale and core components. That way the brand lives in code as well as in a PDF.</p></div><div class="plate"><div class="now"><span class="lbl">Now</span><ul class="manual"><li>File formats: .eps (PMS)</li><li>File formats: .eps (CMYK)</li><li>File formats: .gif (RGB)</li><li>Print standards</li><li>Stationery: business cards</li><li>Stationery: letterhead</li><li>Stationery: envelope</li><li>Apparel ribbon sizing</li></ul></div><div class="proposed"><span class="lbl">Proposed</span><pre class="tok"><span class="c">/* already in brand-colors.css */</span>
+--color-primary:   #006680;
+--color-accent:    #007D66;
+--color-secondary: #82A3B0;
+--color-success:   #009959;
+--color-warning:   #E58F33;
+--color-error:     #FF1D25;
+
+<span class="c">/* to add */</span>
+<span class="a">--font-display: "Times New Roman";
+--font-body:    Arial;
+--space-scale:  4 8 16 24 32px;</span>
+<span class="c">components: button, card, badge</span></pre></div></div></div>
+
+  </div>
+</section>
+
+<section class="proj-section reveal ">
+  <div class="container">
+    <p class="sec-label">What it could look like</p>
+    <h2 class="sec-head">Houston 2026</h2>
+    <div class="prose"><p>To show it working in practice, I mocked up the new system for our Houston 2026 summit: title slides, lanyards and pull-up banners.</p></div>
+    <span class="label-tag" style="margin-top:36px">Mock-ups</span>
+    <div class="apps">
+      <figure class="app wide"><div class="frame"><img src="images/brand-refresh/pull-up-banner.jpg" alt="Mock-up: light and dark pull-up banners for The Open Group Summit, Houston 2026" loading="lazy"></div><figcaption>Pull-up banners</figcaption></figure>
+      <figure class="app"><div class="frame fit"><img src="images/brand-refresh/lanyard.png" alt="Mock-up: summit lanyard pass" loading="lazy"></div><figcaption>Event lanyard</figcaption></figure>
+      <figure class="app"><div class="frame"><img src="images/brand-refresh/summit-slide.jpg" alt="Mock-up: Houston 2026 summit title slide" loading="lazy"></div><figcaption>Summit title slide</figcaption></figure>
     </div>
 
-    <section>
-      <a href="index.html" class="back-link">← Back to portfolio</a>
+  </div>
+</section>
 
-      <div class="tags">
-        <span class="tag">Brand Identity</span>
-        <span class="tag">Design System</span>
-        <span class="tag">Corporate</span>
-      </div>
+<section class="next-section reveal">
+  <div class="container">
+    <a href="proj-cic.html" class="next-link">
+      <div><p class="next-label">Next project</p><h3 class="next-title">Community Integrated Care</h3></div>
+      <span class="next-arr">→</span>
+    </a>
+  </div>
+</section>
 
-      <div class="meta-bar">
-        <div class="meta-item">
-          <div class="meta-label">Client</div>
-          <div class="meta-value">The Open Group</div>
-        </div>
-        <div class="meta-item">
-          <div class="meta-label">Role</div>
-          <div class="meta-value">Lead Designer</div>
-        </div>
-        <div class="meta-item">
-          <div class="meta-label">Scope</div>
-          <div class="meta-value">Full Brand System</div>
-        </div>
-        <div class="meta-item">
-          <div class="meta-label">Year</div>
-          <div class="meta-value">2024</div>
-        </div>
-      </div>
-    </section>
+<footer class="site-footer"><div class="container">
+  <span>© 2026 Tom Davies</span>
+  <div class="links"><a href="index.html">Portfolio</a><a href="island.html">CV island</a><a href="mailto:tdjdavies@gmail.com">Email</a><a href="https://www.linkedin.com/in/tomdaviesdesign/" target="_blank" rel="noopener">LinkedIn</a></div>
+</div></footer>
 
-    <section>
-      <h2>Overview</h2>
-      <p>The Open Group required a comprehensive brand refresh to modernize their visual identity while maintaining recognition within the enterprise architecture community. The project encompassed logo redesign, colour system development, typography refinement, and a complete design system.</p>
-    </section>
-
-    <section>
-      <h2>Brand Calibrations</h2>
-      <div class="grid">
-        <div class="grid-item">
-          <h3>Logo Lockup</h3>
-          <p>Refined wordmark with improved spacing and proportions</p>
-          <img src="1-Logo.png" alt="Logo Lockup">
-        </div>
-        <div class="grid-item">
-          <h3>Sub-brand Template</h3>
-          <p>Flexible system for subsidiary brand applications</p>
-          <img src="2-subbrand.png" alt="Sub-brand Template">
-        </div>
-        <div class="grid-item">
-          <h3>Colour System</h3>
-          <p>Primary, secondary, and semantic colour palette with roles</p>
-          <img src="3-colours.png" alt="Colour System">
-        </div>
-        <div class="grid-item">
-          <h3>Typography</h3>
-          <p>Font pairing and hierarchy for digital and print</p>
-          <img src="4-typography.png" alt="Typography">
-        </div>
-        <div class="grid-item">
-          <h3>Imagery Kit</h3>
-          <p>Photography and illustration guidelines</p>
-          <img src="5-Imagery.png" alt="Imagery Kit">
-        </div>
-        <div class="grid-item">
-          <h3>Design Tokens</h3>
-          <p>Complete system of variables for development</p>
-          <img src="6-Design system tokens.png" alt="Design System Tokens">
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>System Applications</h2>
-      <p>The brand system was applied across multiple touchpoints including corporate materials, digital platforms, and environmental design. Each application maintained consistency while adapting to specific contexts.</p>
-      <div class="mockup-grid">
-        <div class="mockup-item">
-          <img src="Asset 1.png" alt="System Application">
-        </div>
-        <div class="mockup-item">
-          <img src="Lanyard.png" alt="Lanyard Mockup">
-        </div>
-        <div class="mockup-item">
-          <img src="Pull-Up Banner Mockup.png" alt="Pull-Up Banner">
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Result</h2>
-      <p>A comprehensive, modern brand identity that strengthens The Open Group's presence in the enterprise architecture space while providing flexibility for future growth and applications.</p>
-    </section>
-
-    <section style="padding-top: 40px; padding-bottom: 80px; border-top: 1px solid var(--border);">
-      <a href="index.html" class="back-link">← Back to portfolio</a>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 Tom Davies. All rights reserved.</p>
-  </footer>
+<script>
+(() => {
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(el => el.classList.add('visible')); return; }
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }), { threshold: .08, rootMargin: '0px 0px -36px 0px' });
+  els.forEach(el => io.observe(el));
+})();
+</script>
+<script src="assets/project.js" defer></script>
 </body>
 </html>
