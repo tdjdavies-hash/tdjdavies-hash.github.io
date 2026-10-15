@@ -1,0 +1,282 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Vertical Dreams, Tom Davies</title>
+<meta name="description" content="A concept brand and website for Vertical Dreams, an independent climbing gym in Manchester, New Hampshire.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Tom Davies">
+<meta property="og:title" content="Vertical Dreams, Tom Davies">
+<meta property="og:description" content="A concept brand and website for Vertical Dreams, an independent climbing gym in Manchester, New Hampshire.">
+<meta property="og:url" content="https://tdjdavies-hash.github.io/proj-vertical-dreams.html">
+<meta property="og:image" content="https://tdjdavies-hash.github.io/images/covers/vertical-dreams.jpg">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="600">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14101f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Inter:wght@300;400;500;600&family=Manrope:wght@400;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0C0B0A;--surface:#141210;--text:#F2EDE4;
+  --text-muted:rgba(242,237,228,.50);--text-subtle:rgba(242,237,228,.28);
+  --accent:#a67359;--accent-purple:#715378;--accent-teal:#3a6057;
+  --border:rgba(242,237,228,.07);--border-mid:rgba(242,237,228,.12);
+  --radius:6px;--radius-lg:10px;--ease:cubic-bezier(.4,0,.2,1);--t:.28s;
+  --kac-cream:#F0EBE0;--kac-cream-mid:#E8E0D4;--kac-dark:#1A1612;
+}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.container{max-width:1160px;margin:0 auto;padding:0 40px}
+@media(max-width:640px){.container{padding:0 20px}}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:20px 0;background:rgba(12,11,10,.90);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;justify-content:space-between;align-items:center}
+.nav-logo{font-family:var(--pixel);font-weight:400;font-size:.9rem;text-decoration:none;color:var(--text);letter-spacing:0}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{font-size:.82rem;color:var(--text-muted);text-decoration:none;transition:color var(--t) var(--ease)}
+.nav-links a:hover{color:var(--text)}
+
+/* HERO */
+.proj-hero{padding:110px 0 72px;border-bottom:1px solid var(--border)}
+.back-link{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;color:var(--text-subtle);text-decoration:none;margin-bottom:36px;letter-spacing:.03em;transition:color var(--t) var(--ease)}
+.back-link:hover{color:var(--text-muted)}
+.proj-tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:18px}
+.proj-tag{font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:4px 11px;border-radius:0;border:1px solid var(--border-mid);color:var(--text-subtle)}
+.proj-tag-accent{border-color:rgba(166,115,89,.5);color:var(--accent)}
+.proj-title{font-family:var(--pixel);font-weight:400;font-size:clamp(2.8rem,6.5vw,6.5rem);line-height:1;letter-spacing:0;color:var(--text);margin-bottom:18px}
+.proj-sub{font-size:.95rem;color:var(--text-muted);max-width:580px;line-height:1.75}
+
+/* META BAR */
+.meta-bar{padding:32px 0;border-bottom:1px solid var(--border)}
+.meta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+@media(max-width:640px){.meta-grid{grid-template-columns:repeat(2,1fr)}}
+.meta-label{font-size:.65rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--text-subtle);margin-bottom:5px}
+.meta-value{font-size:.88rem;color:var(--text)}
+
+/* SECTIONS */
+.proj-section{padding:72px 0;border-bottom:1px solid var(--border)}
+.sec-label{font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--text-subtle);margin-bottom:16px}
+.sec-head{font-family:var(--pixel);font-weight:400;font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:0;color:var(--text);margin-bottom:16px}
+.sec-body{font-size:.92rem;color:var(--text-muted);line-height:1.8;max-width:640px}
+
+/* BRAND IDENTITY */
+.brand-id-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:32px}
+@media(max-width:700px){.brand-id-grid{grid-template-columns:1fr}}
+.brand-logo-panel{background:var(--kac-cream);border-radius:0;padding:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px}
+.brand-logo-panel img{max-width:280px;width:100%;height:auto}
+.brand-tagline{font-family:'Josefin Sans',sans-serif;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#a67359;text-align:center}
+.brand-palette-panel{display:flex;flex-direction:column;gap:14px}
+.palette-swatch-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.swatch{border-radius:0;padding:24px 16px 16px;display:flex;flex-direction:column;justify-content:flex-end;min-height:110px}
+.swatch-label{font-size:.68rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.swatch-hex{font-size:.7rem;opacity:.7;margin-top:2px}
+.brand-values-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.brand-val{background:var(--surface);border:1px solid var(--border);border-radius:0;padding:18px 16px}
+.brand-val-title{font-family:'Josefin Sans',sans-serif;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;font-weight:600}
+.brand-val-body{font-size:.78rem;color:var(--text-muted);line-height:1.6}
+
+/* BROWSER FRAME */
+.browser-frame{border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border-mid);box-shadow:0 32px 80px rgba(0,0,0,.55)}
+.browser-chrome{background:#2A2624;padding:12px 16px;display:flex;align-items:center;gap:10px}
+.browser-dots{display:flex;gap:5px}
+.browser-dot{width:10px;height:10px;border-radius:50%}
+.browser-dot-r{background:#FF5F57}.browser-dot-y{background:#FFBD2E}.browser-dot-g{background:#28C840}
+.browser-bar{flex:1;background:#1A1816;border-radius:20px;padding:5px 14px;font-size:.72rem;color:rgba(242,237,228,.3);font-family:'Inter',sans-serif}
+
+/* KAC STORE */
+
+/* Store hero */
+
+/* Product grid */
+.badge-new{background:#3a6057;color:white}
+.badge-rare{background:#715378;color:white}
+.badge-best{background:#a67359;color:white}
+
+/* Editorial strip */
+
+/* Store footer strip */
+
+/* Strategy panels */
+.strategy-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:32px}
+@media(max-width:700px){.strategy-grid{grid-template-columns:1fr}}
+.strategy-leaf-panel{background:#3a6057;border-radius:0;padding:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;min-height:260px}
+.strategy-leaf-panel img{max-width:150px;width:100%;height:auto}
+.strategy-pillars{display:flex;flex-direction:column;gap:14px}
+.strategy-pillar{background:var(--surface);border:1px solid var(--border);border-radius:0;padding:20px 22px}
+.strategy-pillar-title{font-family:'Josefin Sans',sans-serif;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px;font-weight:600}
+.strategy-pillar-body{font-size:.84rem;color:var(--text-muted);line-height:1.6}
+
+/* NEXT / FOOTER */
+.next-section{padding:72px 0}
+.next-link{display:flex;align-items:center;justify-content:space-between;text-decoration:none;padding:40px 48px;background:var(--surface);border-radius:0;border:1px solid var(--border);transition:border-color var(--t) var(--ease),transform var(--t) var(--ease),box-shadow var(--t) var(--ease)}
+.next-link:hover{border-color:var(--border-mid);transform:translateY(-3px);box-shadow:0 20px 48px rgba(0,0,0,.4)}
+.next-label{font-size:.68rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--text-subtle);margin-bottom:8px}
+.next-title{font-family:var(--pixel);font-weight:400;font-size:clamp(1.4rem,2.5vw,2rem);letter-spacing:0;color:var(--text)}
+.next-arr{font-size:1.5rem;color:var(--text-subtle);transition:transform var(--t) var(--ease)}
+.next-link:hover .next-arr{transform:translateX(5px)}
+footer{padding:28px 0;border-top:1px solid var(--border)}
+.footer-inner{display:flex;align-items:center;justify-content:space-between}
+.footer-copy,.footer-link{font-size:.76rem;color:var(--text-subtle)}
+.footer-right{display:flex;gap:20px}
+.footer-link{text-decoration:none;transition:color var(--t) var(--ease)}
+.footer-link:hover{color:var(--text-muted)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+</style>
+<link rel="stylesheet" href="assets/project.css">
+<style>:root{--acc:#94BDF2}
+.vd-sw{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:40px}
+.vd-sw div{aspect-ratio:1/1.1;border:2px solid var(--line);box-shadow:var(--shadow-s);display:flex;flex-direction:column;justify-content:flex-end;padding:12px;font-family:'Manrope',sans-serif}
+.vd-sw b{font-weight:800;font-size:14px;line-height:1.2}
+.vd-sw code{font-family:var(--pixel);font-size:10px;margin-top:4px;opacity:.85}
+@media (max-width:760px){.vd-sw{grid-template-columns:repeat(2,1fr)}.vd-sw div{aspect-ratio:auto;min-height:96px}}
+.vd-type{margin-top:18px;background:#FFFEFC;color:#333;border:2px solid var(--line);box-shadow:var(--shadow);padding:28px 26px;font-family:'Manrope',sans-serif}
+.vd-type .k{font-family:var(--pixel);font-size:10px;color:#2B76D9;margin:0 0 10px}
+.vd-type .h{font-weight:800;font-size:clamp(34px,6vw,60px);line-height:1;letter-spacing:-.01em;margin:0 0 14px}
+.vd-type .b{font-weight:400;font-size:17px;line-height:1.6;max-width:52ch;margin:0}
+.vd-browser{margin-top:40px;border:2px solid var(--line);box-shadow:var(--shadow);background:#FFFEFC}
+.vd-browser .bar{display:flex;align-items:center;gap:6px;padding:9px 12px;background:#FFFEFC;border-bottom:2px solid #e6e3dd}
+.vd-browser .bar i{width:9px;height:9px;display:block}
+.vd-browser .bar span{flex:1;margin-left:10px;background:#eceae6;height:16px}
+.vd-browser .scroll{max-height:min(70vh,640px);overflow-y:auto;overscroll-behavior:contain}
+.vd-browser img{display:block;width:100%;height:auto}
+.vd-cap{font-family:var(--pixel);font-size:11px;color:var(--muted);margin-top:12px}
+.vd-voice{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:36px}
+.vd-voice div{border:2px solid var(--line);padding:22px 22px 24px;font-family:'Manrope',sans-serif}
+.vd-voice .old{background:transparent;color:var(--muted)}
+.vd-voice .new{background:#2B76D9;color:#FFFEFC;box-shadow:var(--shadow)}
+.vd-voice .t{font-family:var(--pixel);font-size:10px;display:block;margin-bottom:12px}
+.vd-voice .new .t{color:#d4e4fa}
+.vd-voice p{margin:0;font-size:20px;line-height:1.4;font-weight:800}
+.vd-voice .old p{font-weight:400}
+@media (max-width:760px){.vd-voice{grid-template-columns:1fr}}
+.prose a{color:var(--acc);text-decoration:underline;text-underline-offset:3px}
+.vd-list{margin:14px 0 0;padding-left:20px;max-width:62ch;color:inherit}
+.vd-list li{margin:0 0 8px;line-height:1.6}
+.note .label-tag{color:#14101f !important}
+@media (max-width:760px){.gallery.vd-gal{grid-template-columns:1fr}}
+.vd-gal{align-items:start}
+.vd-lines{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;list-style:none;padding:0}
+.vd-lines li{font-family:'Manrope',sans-serif;font-weight:800;font-size:15px;background:#FFFEFC;color:#333;padding:10px 14px;border:2px solid var(--line)}
+</style>
+</head><body>
+
+<header class="site-nav"><div class="container">
+  <a class="brand" href="index.html">Tom Davies</a>
+  <ul>
+    <li><a href="index.html#work">Work</a></li>
+    <li class="hide-s"><a href="index.html#about">About</a></li>
+    <li class="hide-s"><a href="index.html#contact">Contact</a></li>
+    <li><a class="btn" href="island.html">Play my CV</a></li>
+  </ul>
+</div></header>
+
+<section class="proj-hero">
+  <canvas class="proj-sky" aria-hidden="true"></canvas>
+  <div class="container">
+    <a href="index.html" class="back-link">← All projects</a>
+    <div class="proj-tags"><span class="proj-tag proj-tag-accent">Brand system</span><span class="proj-tag">Web design</span><span class="proj-tag">Concept</span><span class="proj-tag">2026</span></div>
+    <h1 class="proj-title">Vertical Dreams</h1>
+    <p class="proj-sub">A concept brand and website for Vertical Dreams, an independent climbing gym in Manchester, New Hampshire. Its logo and website hadn't changed in years, so I set myself a challenge: how far could I bring an independent gym up to today's standards? The answer was a new logo and brand system, a review of the old site, and a new homepage.</p>
+  </div>
+</section>
+<section class="meta-bar">
+  <div class="container"><div class="meta-grid three"><div><p class="meta-label">Client</p><p class="meta-value">Self-initiated concept</p></div><div><p class="meta-label">Year</p><p class="meta-value">2026</p></div><div><p class="meta-label">What I did</p><p class="meta-value">Logo, brand system, website review, homepage concept</p></div></div></div>
+</section>
+
+<section class="proj-section reveal ">
+  <div class="container">
+    <p class="sec-label">The context</p>
+    <h2 class="sec-head">Climbing has outgrown the garage</h2>
+    <div class="prose"><p>Indoor climbing and bouldering have boomed. What used to be a niche, dusty hobby, a homemade training board at the back of someone's workshop, is now big business. In October 2026, five European bouldering brands came together as the <a href="https://www.verlinvest.com/insights/our-investment-in-the-international-bouldering-alliance/" target="_blank" rel="noopener">International Bouldering Alliance</a>: 39 gyms across four countries, with plans to grow by buying more. Large groups like this have raised the bar on how a gym looks, how easy it is to book, and how welcoming it is to people who've never climbed.</p><p>Small independents like Vertical Dreams can get left behind, and the brand is usually where it shows first. Their logo and website looked like they hadn't been touched since the early 2000s. I wanted to see how far I could bring an independent gym up to today's standards.</p><p>Most people coming through the door now are beginners, so everything had to feel welcoming first, without losing the energy that makes climbing fun.</p></div>
+
+  </div>
+</section>
+
+<section class="proj-section reveal ">
+  <div class="container">
+    <p class="sec-label">Brand</p>
+    <h2 class="sec-head">The logo</h2>
+    <div class="prose"><p>The mark is a climber caught mid-move, with their arms and legs arranged to spell V and D. It sits inside an angular, shard-like shape, like a hold or a slab of rock. It works in blue, red, black or reversed out of a colour.</p></div>
+    <div class="gallery vd-gal" style="--cols:2"><figure><img src="images/vd/slide-logo.jpg" alt="Vertical Dreams logo shown in blue, red, black and reversed" loading="lazy"><figcaption class="vd-cap">Logo variants, from the LinkedIn carousel</figcaption></figure><figure><img src="images/vd/slide-merch.jpg" alt="The Vertical Dreams logo applied to merchandise" loading="lazy"><figcaption class="vd-cap">The logo on merch</figcaption></figure></div>
+
+  </div>
+</section>
+
+<section class="proj-section reveal ">
+  <div class="container">
+    <p class="sec-label">Brand</p>
+    <h2 class="sec-head">Colours off the walls</h2>
+    <div class="prose"><p>I took the palette straight from the climbing walls: VD Blue, a softer blue, a red kept for the main buttons, plus a warm white and a soft black. Climbing is for everyone, so I checked the palette against the three most common types of colour blindness before signing it off.</p><p>Type is Manrope throughout. Its heaviest weight for headings, regular for everything else.</p></div>
+    <div class="vd-sw"><div style="background:#2B76D9;color:#FFFEFC"><b>VD Blue</b><code>#2B76D9</code></div><div style="background:#94BDF2;color:#333333"><b>VD Soft Blue</b><code>#94BDF2</code></div><div style="background:#F25244;color:#FFFEFC"><b>VD Red</b><code>#F25244</code></div><div style="background:#333333;color:#FFFEFC"><b>VD Black</b><code>#333333</code></div><div style="background:#FFFEFC;color:#333333"><b>VD White</b><code>#FFFEFC</code></div></div>
+    <div class="vd-type"><p class="k">Manrope ExtraBold / Regular</p><p class="h">GET ON THE WALL.</p><p class="b">Bouldering, top rope and a community that's got your back. New here? Great, that's most of us.</p></div>
+    <figure class="figure"><img src="images/vd/slide-palette.jpg" alt="The Vertical Dreams palette checked for deuteranopia, protanopia and tritanopia" loading="lazy"><figcaption>The palette checked against three types of colour blindness</figcaption></figure>
+
+  </div>
+</section>
+
+<section class="proj-section reveal ">
+  <div class="container">
+    <p class="sec-label">Website</p>
+    <h2 class="sec-head">The old website</h2>
+    <div class="prose"><p>The site was a WordPress build from around 2015. I wrote a full review before designing anything. Three things stood out:</p></div>
+    <div class="prose"><ul class="vd-list"><li>Eight top-level menus, some with seven items, and duplicates.</li><li>After the move from Nashua to Manchester, the site still offered both locations, so it wasn't clear where the gym actually was.</li><li>Missing alt text, copyright still 2017, and a dead 2015 Meetup link.</li></ul></div>
+    <figure class="figure"><img src="images/vd/old-site.jpg" alt="The old Vertical Dreams homepage, with a dark background, photo slider and orange gift card button" loading="lazy"><figcaption>The site when I started, July 2026. It has been updated since.</figcaption></figure>
+
+  </div>
+</section>
+
+<section class="proj-section reveal ">
+  <div class="container">
+    <p class="sec-label">Website</p>
+    <h2 class="sec-head">The new homepage</h2>
+    <div class="prose"><p>A big full-width photo to open, then straight into the question every new visitor has: which session is for me? New and social, adults, or juniors. Next comes a block just for first-timers, then the community, the different ways to climb, simple pricing, a few words from members and a short FAQ.</p><p>I kept red for the four buttons that matter most, like booking a first session. Everything else is blue, black and white. Photos and cards are cut into angular shapes that echo the logo, with a slightly hand-drawn outline.</p></div>
+    <div class="vd-browser"><div class="bar"><i style="background:#F25244"></i><i style="background:#94BDF2"></i><i style="background:#2B76D9"></i><span></span></div><div class="scroll" tabindex="0" aria-label="Full homepage concept, scrollable"><img src="images/vd/home-full.jpg" alt="The full Vertical Dreams homepage concept, from hero to footer" loading="lazy"></div></div>
+    <p class="vd-cap">The full homepage. Scroll inside the frame. Placeholder photography.</p>
+    <div class="gallery vd-gal" style="--cols:2"><figure><img src="images/vd/home-sessions.jpg" alt="Three session tiles: New and Social, Adult Climbers, Junior Climbers" loading="lazy"><figcaption class="vd-cap">Pick your session. Placeholder photography.</figcaption></figure><figure><img src="images/vd/home-pricing.jpg" alt="Three pricing cards: Day Pass, Membership and Student" loading="lazy"><figcaption class="vd-cap">Simple pricing. Sample prices.</figcaption></figure></div>
+
+  </div>
+</section>
+
+<section class="proj-section reveal ">
+  <div class="container">
+    <p class="sec-label">Voice</p>
+    <h2 class="sec-head">The voice</h2>
+    <div class="vd-voice"><div class="old"><span class="t">Old</span><p>Vertical Dreams offers something for everyone.</p></div><div class="new"><span class="t">New</span><p>Bouldering, top rope and a community that's got your back. New here? Great, that's most of us.</p></div></div>
+    <ul class="vd-lines"><li>New? No worries. No experience, no booking, no awkwardness.</li><li>Leave the jeans at home.</li><li>Your first move starts here.</li></ul>
+
+  </div>
+</section>
+
+<section class="proj-section reveal ">
+  <div class="container">
+    <div class="note"><p class="label-tag">What's next</p><div class="prose"><p>This is a concept for now. The prices, reviews and blog posts on it are placeholders, and so is the photography. The next step is real photos of the gym, real prices and proper testing on phones.</p></div></div>
+
+  </div>
+</section>
+
+<section class="next-section reveal">
+  <div class="container">
+    <a href="proj-kac-plants.html" class="next-link">
+      <div><p class="next-label">Next project</p><h3 class="next-title">KAC Exotic Plant Collective</h3></div>
+      <span class="next-arr">→</span>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer"><div class="container">
+  <span>© 2026 Tom Davies</span>
+  <div class="links"><a href="index.html">Portfolio</a><a href="island.html">CV island</a><a href="mailto:tdjdavies@gmail.com">Email</a><a href="https://www.linkedin.com/in/tomdaviesdesign/" target="_blank" rel="noopener">LinkedIn</a></div>
+</div></footer>
+
+<script>
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }});
+}, {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+<script src="assets/project.js" defer></script>
+</body></html>
