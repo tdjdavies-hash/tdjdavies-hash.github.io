@@ -7,7 +7,8 @@
 <meta name="description" content="Tom Davies, Brand &amp; Content Designer, Career Island">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Inter:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>@font-face{font-family:"VT323";src:url(assets/fonts/vt323.woff2) format("woff2");font-display:swap;size-adjust:130%}</style>
 <style>
 :root{
   /* panels match the NPC dialogue boxes: dark, with the lilac frame */
@@ -21,22 +22,22 @@
 *,*::before,*::after{box-sizing:inherit}
 html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px);background:#14101f}
 body{margin:0;height:100%;background:#14101f;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;overflow:hidden;-webkit-tap-highlight-color:transparent}
-.px{font-family:Silkscreen,"Courier New",monospace}
+.px{font-family:"VT323","Courier New",monospace}
 #game:focus{outline:none}
 #focusHint{position:absolute;left:50%;top:50%;translate:-50% -50%;z-index:15}
 #game{position:relative;width:100%;height:100%;overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none}
 #c{position:absolute;left:0;top:0;image-rendering:pixelated;image-rendering:crisp-edges;cursor:pointer}
 #labels{position:absolute;inset:0;pointer-events:none}
-.tag{position:absolute;transform:translate(-50%,-100%);font-family:Silkscreen,"Courier New",monospace;font-size:11px;line-height:1;color:#efe6d8;background:rgba(18,13,30,.72);border:1px solid rgba(239,230,216,.22);padding:4px 7px;white-space:nowrap;opacity:.65;transition:opacity .2s,color .2s,border-color .2s}
+.tag{position:absolute;transform:translate(-50%,-100%);font-family:"VT323","Courier New",monospace;font-size:11px;line-height:1;color:#efe6d8;background:rgba(18,13,30,.72);border:1px solid rgba(239,230,216,.22);padding:4px 7px;white-space:nowrap;opacity:.65;transition:opacity .2s,color .2s,border-color .2s}
 .tag.near{opacity:1;color:#ffd79a;border-color:#e0a458}
 
 #hud{position:absolute;left:0;right:0;top:0;display:flex;justify-content:space-between;align-items:flex-start;padding:14px 16px;pointer-events:none;gap:12px;z-index:4}
 #hud > *{pointer-events:auto}
-.brand .name{font-family:Silkscreen,"Courier New",monospace;font-size:18px;color:#f3e9da;text-shadow:2px 2px 0 #120d20}
+.brand .name{font-family:"VT323","Courier New",monospace;font-size:18px;color:#f3e9da;text-shadow:2px 2px 0 #120d20}
 .brand .role{font-size:15px;font-style:italic;color:#cbbfd2;text-shadow:1px 1px 0 #120d20;margin-top:2px}
 .hud-btns{display:flex;gap:8px}
 
-.pbtn{font-family:Silkscreen,"Courier New",monospace;font-size:12px;line-height:1.2;background:var(--btn-bg);color:var(--ink);border:2px solid var(--line);box-shadow:3px 3px 0 var(--shadow);padding:8px 12px;cursor:pointer;border-radius:0}
+.pbtn{font-family:"VT323","Courier New",monospace;font-size:12px;line-height:1.2;background:var(--btn-bg);color:var(--ink);border:2px solid var(--line);box-shadow:3px 3px 0 var(--shadow);padding:8px 12px;cursor:pointer;border-radius:0}
 .pbtn:hover{border-color:var(--accent)}
 .pbtn:active{box-shadow:1px 1px 0 var(--shadow);transform:translate(2px,2px)}
 .pbtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
@@ -50,15 +51,15 @@ kbd{font-family:inherit;border:1px solid var(--line);padding:1px 5px;margin-left
 .overlay{position:absolute;inset:0;display:grid;place-items:center;background:var(--backdrop);padding:16px;z-index:10}
 [hidden]{display:none !important}
 .card{scrollbar-color:var(--line) var(--panel);background:var(--panel);color:var(--ink);border:2px solid var(--frame);box-shadow:6px 6px 0 var(--shadow);width:100%;max-width:540px;max-height:100%;overflow:auto;padding:24px 26px}
-.card h1,.card h2{font-family:Silkscreen,"Courier New",monospace;font-weight:400;line-height:1.15;margin:0 0 10px;color:#ffd79a}
+.card h1,.card h2{font-family:"VT323","Courier New",monospace;font-weight:400;line-height:1.15;margin:0 0 10px;color:#ffd79a}
 .card h1{font-size:28px}
 .card h2{font-size:22px}
-.card h3{font-family:Silkscreen,"Courier New",monospace;font-weight:400;font-size:13px;margin:22px 0 6px;color:var(--accent)}
+.card h3{font-family:"VT323","Courier New",monospace;font-weight:400;font-size:13px;margin:22px 0 6px;color:var(--accent)}
 .card p{font-size:16px;line-height:1.6;margin:0 0 12px;max-width:62ch}
 .lede{font-style:italic;color:var(--muted)}
 .controls{margin:16px 0 20px;padding:0;list-style:none;display:grid;gap:8px}
 .controls li{font-size:16px;line-height:1.4;display:grid;grid-template-columns:5.5em 1fr;gap:10px}
-.controls b{font-family:Silkscreen,"Courier New",monospace;font-weight:400;font-size:12px;padding-top:3px;color:var(--accent)}
+.controls b{font-family:"VT323","Courier New",monospace;font-weight:400;font-size:12px;padding-top:3px;color:var(--accent)}
 .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
 
 .kicker{font-size:15px;font-style:italic;color:var(--muted);margin-bottom:4px}
@@ -69,7 +70,7 @@ kbd{font-family:inherit;border:1px solid var(--line);padding:1px 5px;margin-left
 .points li{margin-bottom:4px}
 .points li::marker{color:var(--accent)}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 0;padding:0;list-style:none}
-.tags li{font-family:Silkscreen,"Courier New",monospace;font-size:11px;background:var(--chip);padding:5px 8px}
+.tags li{font-family:"VT323","Courier New",monospace;font-size:11px;background:var(--chip);padding:5px 8px}
 .sheet-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
 .swatch{width:14px;height:14px;flex:none;margin-top:6px}
 
@@ -95,7 +96,7 @@ kbd{font-family:inherit;border:1px solid var(--line);padding:1px 5px;margin-left
 .quals li.fresh{animation:pop .5s ease-out}
 @media (max-width:600px){ .quals li{font-size:12px} .quals{max-width:200px} }
 .trow{display:flex;align-items:center;gap:6px}
-.tl{font-family:Silkscreen,"Courier New",monospace;font-size:10px;color:#cbbfd2;width:4.6em;text-shadow:1px 1px 0 #120d20}
+.tl{font-family:"VT323","Courier New",monospace;font-size:10px;color:#cbbfd2;width:4.6em;text-shadow:1px 1px 0 #120d20}
 .pips{display:flex;gap:4px}
 .pip{width:9px;height:9px;border:1px solid rgba(239,230,216,.45);background:rgba(18,13,30,.5)}
 .pip.on{border-color:rgba(255,255,255,.7)}
@@ -109,14 +110,14 @@ kbd{font-family:inherit;border:1px solid var(--line);padding:1px 5px;margin-left
 .toast.pop{animation:pop .35s ease-out}
 @media (max-width:600px){ .tag{opacity:0} .tag.near{opacity:1} .hud-btns .pbtn{font-size:10px;padding:6px 8px;white-space:nowrap} .hud-btns{gap:6px} #hud{padding:10px} }
 @keyframes pop{from{transform:translateY(-8px);opacity:0}to{transform:none;opacity:1}}
-.toast .tk{font-family:Silkscreen,"Courier New",monospace;font-size:10px;color:#e0a458}
-.toast .tt{font-family:Silkscreen,"Courier New",monospace;font-size:13px;margin-top:3px}
+.toast .tk{font-family:"VT323","Courier New",monospace;font-size:10px;color:#e0a458}
+.toast .tt{font-family:"VT323","Courier New",monospace;font-size:13px;margin-top:3px}
 .toast .tn{font-size:15px;font-style:italic;color:#cbbfd2;margin-top:2px}
 .dialog{position:absolute;left:50%;bottom:22px;translate:-50% 0;width:min(560px,calc(100% - 24px));z-index:12;background:rgba(14,10,24,.94);color:#efe6d8;border:2px solid #8a7aa0;box-shadow:5px 5px 0 rgba(0,0,0,.5);padding:14px 18px;cursor:pointer}
-.dialog .dn{font-family:Silkscreen,"Courier New",monospace;font-size:13px;color:#ffd79a}
+.dialog .dn{font-family:"VT323","Courier New",monospace;font-size:13px;color:#ffd79a}
 .dialog .dr{font-size:14px;font-style:italic;color:#b1a5b6;margin:2px 0 8px}
 .dialog .dt{font-size:18px;line-height:1.5;margin:0;min-height:3em}
-.dialog .dh{font-family:Silkscreen,"Courier New",monospace;font-size:10px;color:#8a7aa0;margin-top:8px;text-align:right}
+.dialog .dh{font-family:"VT323","Courier New",monospace;font-size:10px;color:#8a7aa0;margin-top:8px;text-align:right}
 @media (prefers-reduced-motion: reduce){ .toast.pop{animation:none} }
 .listfoot{display:flex;justify-content:flex-end;margin-top:4px}
 .textbtn{background:none;border:none;color:var(--muted);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-style:italic;font-size:15px;text-decoration:underline;cursor:pointer;padding:4px}
