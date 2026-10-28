@@ -1457,10 +1457,15 @@ function drawHomeScene(t){
   fig(88, 68, true, { seat:63, hair:'#7a4a2a', hairLong:true, pony:true, shirt:'#e7a0b0', pants:'#4a5a8a', skin:'#e8ccaa' });
   fig(99, 68, true, { seat:63, hair:'#5a3a22', shirt:'#5fb8e8', pants:'#3a3550', skin:'#e8ccaa' });
   R(62, 65, 50, 7, '#463a58'); R(62, 65, 50, 1, '#54466a'); R(64, 72, 2, 3, '#2a1d2c'); R(108, 72, 2, 3, '#2a1d2c');
-  // boy on the rug with blocks
+  // boy on the rug with a football
   const fb = fig(84, 86, true, { seat:86, noLegs:true, hair:'#4a2e1e', shirt:'#8fd16a', pants:'#3a3550', skin:'#e8ccaa' });
   R(fb.bx - 1, 84, 7, 2, '#3a3550');
-  R(91, 83, 3, 3, '#f2c14e'); R(94, 84, 3, 2, '#e85d75'); R(92, 80, 3, 3, '#5fb8e8');
+  const roll = reduceMotion ? 0 : Math.sin(t * 1.6), bcx = 92 + Math.round(roll), spin = reduceMotion ? 0 : Math.floor(t * 4) % 4;
+  R(fb.bx + 5, 83, bcx - fb.bx - 7, 1, '#e8ccaa');
+  sc.globalAlpha = 0.3; R(bcx - 3, 87, 7, 1, '#1b1420'); sc.globalAlpha = 1;
+  disc(bcx, 84, 3, '#efeff5'); R(bcx + 2, 83, 1, 3, '#c9c9d0');
+  R(bcx - 1 + (spin === 1 ? 1 : spin === 3 ? -1 : 0), 83, 2, 2, '#2a1d2c');
+  [[-3, 0], [-1, -3], [2, -2], [2, 2], [-1, 3], [-3, 1]].forEach(([dx, dy], k) => { if (k % 2 === spin % 2) R(bcx + dx, 84 + dy, 1, 1, '#2a1d2c'); });
   // drum kit
   R(152, 46, 1, 30, '#9a9aa2'); const hit = reduceMotion ? 0 : Math.floor(t * 4) % 2;
   R(146, 45 - hit, 11, 1, '#e0c060'); R(148, 44 - hit, 7, 1, '#f2d27a');
